@@ -1,0 +1,44 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Proyecto api, integracion de multiples api de busqueda, realizado con node.js",
+    "version": "1.0.0",
+    "title": "Web Scraper Cesticom",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "joseluis.monasterioy@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "schemes": ["http", "https"],
+  "paths": {
+    "/query/search/{data}": {
+      "get": {
+        "tags": ["user"],
+        "summary": "Unica ruta para obtener la busqueda, se hace la peticion a la ruta http:####/query/search/{data}, donde #### es el puerto donde se desplea la api, data es la palabras o datos a buscar",
+        "operationId": "",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "data",
+            "in": "path",
+            "example": "tv y manga",
+            "description": "datos o palabras introducidas para hacer las busquedas en las diferentes apis con la cual se integra el proyecto,",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación correcta"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+
+  }
+}

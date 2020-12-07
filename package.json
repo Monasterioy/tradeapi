@@ -1,0 +1,29 @@
+{
+  "name": "tribal",
+  "version": "1.0.0",
+  "description": "Prueba Jose Monasterio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js --exec babel-node"
+  },
+  "author": "Jose Monasterio",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parse": "^0.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "save": "^2.4.0",
+    "swagger-ui-express": "^4.1.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "nodemon": "^2.0.6"
+  }
+}
